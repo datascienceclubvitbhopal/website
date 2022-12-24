@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datalize</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../path/to/flowbite/dist/flowbite.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+  </head>
+  <meta
+    name="title"
+    content="An offline hackathon brought to you by Datalize"
+  />
+
+
+  
+    <body>
+      <div id="__next">
+        <header class="bg-background fixed w-full justify-center shadow-xl z-40 hidden">
+          <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-24">
+              <div class="md:flex md:items-center md:gap-12">
+                <div class="block text-teal-300 cursor-pointer">
+                  <span class="sr-only">Home</span>
+                  <svg
+                    class="h-8"
+                    viewBox="0 0 28 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.41 10.3847C1.14777 7.4194 2.85643 4.7861 5.2639 2.90424C7.6714 1.02234 10.6393 0 13.695 0C16.7507 0 19.7186 1.02234 22.1261 2.90424C24.5336 4.7861 26.2422 7.4194 26.98 10.3847H25.78C23.7557 10.3549 21.7729 10.9599 20.11 12.1147C20.014 12.1842 19.9138 12.2477 19.81 12.3047H19.67C19.5662 12.2477 19.466 12.1842 19.37 12.1147C17.6924 10.9866 15.7166 10.3841 13.695 10.3841C11.6734 10.3841 9.6976 10.9866 8.02 12.1147C7.924 12.1842 7.8238 12.2477 7.72 12.3047H7.58C7.4762 12.2477 7.376 12.1842 7.28 12.1147C5.6171 10.9599 3.6343 10.3549 1.61 10.3847H0.41ZM23.62 16.6547C24.236 16.175 24.9995 15.924 25.78 15.9447H27.39V12.7347H25.78C24.4052 12.7181 23.0619 13.146 21.95 13.9547C21.3243 14.416 20.5674 14.6649 19.79 14.6649C19.0126 14.6649 18.2557 14.416 17.63 13.9547C16.4899 13.1611 15.1341 12.7356 13.745 12.7356C12.3559 12.7356 11.0001 13.1611 9.86 13.9547C9.2343 14.416 8.4774 14.6649 7.7 14.6649C6.9226 14.6649 6.1657 14.416 5.54 13.9547C4.4144 13.1356 3.0518 12.7072 1.66 12.7347H0V15.9447H1.61C2.39051 15.924 3.154 16.175 3.77 16.6547C4.908 17.4489 6.2623 17.8747 7.65 17.8747C9.0377 17.8747 10.392 17.4489 11.53 16.6547C12.1468 16.1765 12.9097 15.9257 13.69 15.9447C14.4708 15.9223 15.2348 16.1735 15.85 16.6547C16.9901 17.4484 18.3459 17.8738 19.735 17.8738C21.1241 17.8738 22.4799 17.4484 23.62 16.6547ZM23.62 22.3947C24.236 21.915 24.9995 21.664 25.78 21.6847H27.39V18.4747H25.78C24.4052 18.4581 23.0619 18.886 21.95 19.6947C21.3243 20.156 20.5674 20.4049 19.79 20.4049C19.0126 20.4049 18.2557 20.156 17.63 19.6947C16.4899 18.9011 15.1341 18.4757 13.745 18.4757C12.3559 18.4757 11.0001 18.9011 9.86 19.6947C9.2343 20.156 8.4774 20.4049 7.7 20.4049C6.9226 20.4049 6.1657 20.156 5.54 19.6947C4.4144 18.8757 3.0518 18.4472 1.66 18.4747H0V21.6847H1.61C2.39051 21.664 3.154 21.915 3.77 22.3947C4.908 23.1889 6.2623 23.6147 7.65 23.6147C9.0377 23.6147 10.392 23.1889 11.53 22.3947C12.1468 21.9165 12.9097 21.6657 13.69 21.6847C14.4708 21.6623 15.2348 21.9135 15.85 22.3947C16.9901 23.1884 18.3459 23.6138 19.735 23.6138C21.1241 23.6138 22.4799 23.1884 23.62 22.3947Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="hidden md:block">
+                <nav aria-labelledby="header-navigation">
+                  <h2 class="sr-only" id="header-navigation">
+                    Header navigation
+                  </h2>
+                  <ul class="flex items-center gap-24 text-lg font-medium">
+                    <li class="">
+                      <div class="text-white transition hover:text-black/75 cursor-pointer">
+                        About Us
+                      </div>
+                    </li>
+                    <li class="">
+                      <div
+                        class="text-white transition hover:text-white/75 cursor-pointer"
+                      >
+                        Tracks
+                      </div>
+                    </li>
+                    <li class="">
+                      <div
+                        class="text-white transition hover:text-white/75 cursor-pointer"
+                      >
+                        Prizes
+                      </div>
+                    </li>
+                    <li class="hidden">
+                      <div
+                        class="text-white transition hover:text-white/75 cursor-pointer"
+                      >
+                        Judges
+                      </div>
+                    </li>
+                    <li class="hidden">
+                      <div
+                        class="text-white transition hover:text-white/75 cursor-pointer"
+                      >
+                        Speakers
+                      </div>
+                    </li>
+                    <li class="">
+                      <div
+                        class="text-white transition hover:text-white/75 cursor-pointer"
+                      >
+                        Sponsors
+                      </div>
+                    </li>
+                    <li class="hidden">
+                      <div
+                        class="text-white transition hover:text-white/75 cursor-pointer"
+                      >
+                        Our Team
+                      </div>
+                    </li>
+                    <li class="">
+                      <div
+                        class="text-black transition hover:text-black/75 cursor-pointer"
+                      >
+                        FAQ
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="sm:gap-4 sm:flex">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div
+                      class="px-7 py-2.5 text-base font-medium text-white bg-blue-600 rounded-md shadow cursor-pointer"
+                    >
+                    </div>
+                  </a>
+                </div>
+                <div class="block md:hidden">
+                  <button
+                    class="p-2 text-white transition bg-gray-800 rounded hover:text-white/75"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside
+            id="sideMenu"
+            class="bg-background top-0 right-0 h-screen w-screen md:hidden transform fixed overflow-auto ease-in-out transition-all duration-300 z-40 translate-x-full"
+          >
+            <div class="text-right pr-4 pt-8 pb-2 text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-white inline-block"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-white text-center text-4xl pb-12">Menu</h2>
+            <ul
+              class="grid items-center gap-4 text-2xl font-medium text-center px-8"
+            >
+              <li class="">
+                <div
+                  class="text-white transition hover:text-white/75 cursor-pointer"
+                >
+                  Home
+                </div>
+              </li>
+              <li class="">
+                <div
+                  class="text-black transition hover:text-black/75 cursor-pointer"
+                >
+                  About Us
+                </div>
+              </li>
+              <li class="">
+                <div
+                  class="text-white transition hover:text-white/75 cursor-pointer"
+                >
+                  Tracks
+                </div>
+              </li>
+              <li class="">
+                <div
+                  class="text-white transition hover:text-white/75 cursor-pointer"
+                >
+                  Prizes
+                </div>
+              </li>
+              <li class="hidden">
+                <div
+                  class="text-white transition hover:text-white/75 cursor-pointer"
+                >
+                  Judges
+                </div>
+              </li>
+              <li class="hidden">
+                <div
+                  class="text-white transition hover:text-white/75 cursor-pointer"
+                >
+                  Speakers
+                </div>
+              </li>
+              <li class="">
+                <div
+                  class="text-white transition hover:text-white/75 cursor-pointer"
+                >
+                  Sponsors
+                </div>
+              </li>
+              <li class="hidden">
+                <div
+                  class="text-white transition hover:text-white/75 cursor-pointer"
+                >
+                  Our Team
+                </div>
+              </li>
+              <li class="">
+                <div
+                  class="text-black transition hover:text-black/75 cursor-pointer"
+                >
+                  FAQ
+                </div>
+              </li>
+            </ul>
+          </aside>
+        </header>
+        <main>
+          <section id="home" class="text-white bg-background lg:min-h-screen">
+            <header class="bg-background">
+              <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-24">
+                  <div class="md:flex md:items-center md:gap-12">
+                    <div class="flex items-center gap-4"><div class="sm:gap-4 sm:flex"><a href="#adi1"><div class="px-7 py-2.5 text-white font-medium hover:text-black hover:bg-gray-100 rounded-md shadow cursor-pointer">Register</div></a></div><div class="block md:hidden"></div></div>
+                    <div class="block text-teal-300 cursor-pointer">
+
+
+
+                      
+                      <span class="sr-only">Home</span>
+                      <!--<svg
+                        class="h-8"
+                        viewBox="0 0 28 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0.41 10.3847C1.14777 7.4194 2.85643 4.7861 5.2639 2.90424C7.6714 1.02234 10.6393 0 13.695 0C16.7507 0 19.7186 1.02234 22.1261 2.90424C24.5336 4.7861 26.2422 7.4194 26.98 10.3847H25.78C23.7557 10.3549 21.7729 10.9599 20.11 12.1147C20.014 12.1842 19.9138 12.2477 19.81 12.3047H19.67C19.5662 12.2477 19.466 12.1842 19.37 12.1147C17.6924 10.9866 15.7166 10.3841 13.695 10.3841C11.6734 10.3841 9.6976 10.9866 8.02 12.1147C7.924 12.1842 7.8238 12.2477 7.72 12.3047H7.58C7.4762 12.2477 7.376 12.1842 7.28 12.1147C5.6171 10.9599 3.6343 10.3549 1.61 10.3847H0.41ZM23.62 16.6547C24.236 16.175 24.9995 15.924 25.78 15.9447H27.39V12.7347H25.78C24.4052 12.7181 23.0619 13.146 21.95 13.9547C21.3243 14.416 20.5674 14.6649 19.79 14.6649C19.0126 14.6649 18.2557 14.416 17.63 13.9547C16.4899 13.1611 15.1341 12.7356 13.745 12.7356C12.3559 12.7356 11.0001 13.1611 9.86 13.9547C9.2343 14.416 8.4774 14.6649 7.7 14.6649C6.9226 14.6649 6.1657 14.416 5.54 13.9547C4.4144 13.1356 3.0518 12.7072 1.66 12.7347H0V15.9447H1.61C2.39051 15.924 3.154 16.175 3.77 16.6547C4.908 17.4489 6.2623 17.8747 7.65 17.8747C9.0377 17.8747 10.392 17.4489 11.53 16.6547C12.1468 16.1765 12.9097 15.9257 13.69 15.9447C14.4708 15.9223 15.2348 16.1735 15.85 16.6547C16.9901 17.4484 18.3459 17.8738 19.735 17.8738C21.1241 17.8738 22.4799 17.4484 23.62 16.6547ZM23.62 22.3947C24.236 21.915 24.9995 21.664 25.78 21.6847H27.39V18.4747H25.78C24.4052 18.4581 23.0619 18.886 21.95 19.6947C21.3243 20.156 20.5674 20.4049 19.79 20.4049C19.0126 20.4049 18.2557 20.156 17.63 19.6947C16.4899 18.9011 15.1341 18.4757 13.745 18.4757C12.3559 18.4757 11.0001 18.9011 9.86 19.6947C9.2343 20.156 8.4774 20.4049 7.7 20.4049C6.9226 20.4049 6.1657 20.156 5.54 19.6947C4.4144 18.8757 3.0518 18.4472 1.66 18.4747H0V21.6847H1.61C2.39051 21.664 3.154 21.915 3.77 22.3947C4.908 23.1889 6.2623 23.6147 7.65 23.6147C9.0377 23.6147 10.392 23.1889 11.53 22.3947C12.1468 21.9165 12.9097 21.6657 13.69 21.6847C14.4708 21.6623 15.2348 21.9135 15.85 22.3947C16.9901 23.1884 18.3459 23.6138 19.735 23.6138C21.1241 23.6138 22.4799 23.1884 23.62 22.3947Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>-->
+                    </div>
+                  </div>
+                  <div class="hidden md:block">
+                    <nav aria-labelledby="header-navigation">
+                      <h2 class="sr-only" id="header-navigation">
+                        Header navigation
+                      </h2>
+                      <ul class="flex items-center gap-24 text-lg font-medium">
+                        <li class="">
+                          <div
+                            class="px-7 py-2.5 text-white transition hover:text-black/75 hover:text-black hover:bg-gray-100 rounded-md shadow cursor-pointer"
+                          >
+                            <a href="#about1">About</a>
+                          </div>
+                        </li>
+                        <li class="">
+                          <div
+                            class="px-7 py-2.5 text-white transition  hover:text-black hover:bg-gray-100 rounded-md shadow cursor-pointer"
+                          >
+                            <a href="#track1">EventSchedule</a>
+                          </div>
+                        </li>
+                        <li class="">
+                          <div
+                            class="px-7 py-2.5 text-white transition hover:text-black/75 hover:text-black hover:bg-gray-100 rounded-md shadow cursor-pointer cursor-pointer"
+                          >
+                            <a href="#speaker1">Speakers</a>
+                          </div>
+                        </li>
+                        <li class="">
+                          <div
+                            class="px-7 py-2.5 text-white transition hover:text-black/75 hover:text-black hover:bg-gray-100 rounded-md shadow cursor-pointer cursor-pointer"
+                          >
+                            <a href="#sponsor11">Sponsors</a>
+                          </div>
+                        </li>
+                        <li class="hidden">
+                          <div
+                            class="px-7 py-2.5 text-white transition hover:text-black/75 hover:text-black hover:bg-gray-100 rounded-md shadow cursor-pointer cursor-pointer"
+                          >
+                            Organizers
+                          </div>
+                        </li>
+                        <li class="">
+                          <div
+                            class="px-7 py-2.5 text-white transition hover:text-black/75 hover:text-black hover:bg-gray-100 rounded-md shadow cursor-pointer cursor-pointer"
+                          >
+                            <a href="#contact1">ContactUs</a>
+                          </div>
+                        </li>
+                        <li class="hidden">
+                          <div
+                            class="px-7 py-2.5 text-white transition hover:text-black/75 hover:text-black hover:bg-gray-100 rounded-md shadow cursor-pointer cursor-pointer"
+                          >
+                            Our Team
+                          </div>
+                        </li>
+                        <li class="">
+                          <div
+                            class="px-7 py-2.5 text-white transition hover:text-black/75 hover:text-black hover:bg-gray-100 rounded-md shadow cursor-pointer cursor-pointer"
+                          >
+                            <a href="#faq1" class="gap-2">FAQs</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="flex items-center gap-6">
+                    <div class="sm:gap-3 sm:flex gap-4">
+                      <a
+                        class="cursor-pointer"
+                        href="https://chat.whatsapp.com/G2QcNOVOeosH1OqoeEU74L"
+                        target="_blank"
+                        rel="noreferrer"
+                      >   
+                      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" class="h-7 w-7 inline-block "><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                      </a>
+                      <a
+                        class="cursor-pointer"
+                        href="https://www.instagram.com/dsc_vitb"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          class="h-7 w-7 inline-block"
+                        >
+                          <path
+                            d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
+                          ></path>
+                          <a href="#"></a>
+                        </svg>
+                      </a>
+                      <a
+                        class="cursor-pointer"
+                        href="https://www.linkedin.com/in/data-science-club-vit-bhopal-5b9b02232"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 48 48"
+                          class="h-7 w-7 inline-block"
+                        >
+                          <path
+                            d="M 11.5 6 C 8.4802259 6 6 8.4802259 6 11.5 L 6 36.5 C 6 39.519774 8.4802259 42 11.5 42 L 36.5 42 C 39.519774 42 42 39.519774 42 36.5 L 42 11.5 C 42 8.4802259 39.519774 6 36.5 6 L 11.5 6 z M 11.5 9 L 36.5 9 C 37.898226 9 39 10.101774 39 11.5 L 39 36.5 C 39 37.898226 37.898226 39 36.5 39 L 11.5 39 C 10.101774 39 9 37.898226 9 36.5 L 9 11.5 C 9 10.101774 10.101774 9 11.5 9 z M 15.5 13 A 2.5 2.5 0 0 0 15.5 18 A 2.5 2.5 0 0 0 15.5 13 z M 14 20 C 13.447 20 13 20.447 13 21 L 13 34 C 13 34.553 13.447 35 14 35 L 17 35 C 17.553 35 18 34.553 18 34 L 18 21 C 18 20.447 17.553 20 17 20 L 14 20 z M 21 20 C 20.447 20 20 20.447 20 21 L 20 34 C 20 34.553 20.447 35 21 35 L 24 35 C 24.553 35 25 34.553 25 34 L 25 26.5 C 25 25.121 26.121 24 27.5 24 C 28.879 24 30 25.121 30 26.5 L 30 34 C 30 34.553 30.447 35 31 35 L 34 35 C 34.553 35 35 34.553 35 34 L 35 26 C 35 22.691 32.309 20 29 20 C 27.462 20 26.063 20.586016 25 21.541016 L 25 21 C 25 20.447 24.553 20 24 20 L 21 20 z"
+                          ></path>
+                          <a href="#"></a>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="block md:hidden">
+                      <button
+                      data-modal-toggle="crypto-modal"
+                        class="p-2 text-white transition bg-gray-800 rounded hover:text-white/75"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-5 h-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4 6h16M4 12h16M4 18h16"
+                          ></path>
+                        </svg>
+                      </button>
+                      <div id="crypto-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+                        <div class="relative w-full h-full max-w-md md:h-auto">
+                            <!-- Modal content -->
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="crypto-modal">
+                                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                                    <span class="sr-only">Close modal</span>
+                                </button>
+                                <!-- Modal header -->
+                                <div class="px-6 py-4 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-base font-semibold text-gray-900 lg:text-xl dark:text-white">
+                                        DATALIZE || DSC EVENT
+                                    </h3>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="p-6">
+                                    <p class="text-sm font-normal text-gray-500 dark:text-gray-400">"Analyze , Socialize , Specialize"</p>
+                                    <ul class="my-4 space-y-3">
+                                        <li>
+                                            <a href="#about1" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                                                <svg aria-hidden="true" class="h-4" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M39.0728 0L21.9092 12.6999L25.1009 5.21543L39.0728 0Z" fill="#E17726"/><path d="M0.966797 0.0151367L14.9013 5.21656L17.932 12.7992L0.966797 0.0151367Z" fill="#E27625"/><path d="M32.1656 27.0093L39.7516 27.1537L37.1004 36.1603L27.8438 33.6116L32.1656 27.0093Z" fill="#E27625"/><path d="M7.83409 27.0093L12.1399 33.6116L2.89876 36.1604L0.263672 27.1537L7.83409 27.0093Z" fill="#E27625"/><path d="M17.5203 10.8677L17.8304 20.8807L8.55371 20.4587L11.1924 16.4778L11.2258 16.4394L17.5203 10.8677Z" fill="#E27625"/><path d="M22.3831 10.7559L28.7737 16.4397L28.8067 16.4778L31.4455 20.4586L22.1709 20.8806L22.3831 10.7559Z" fill="#E27625"/><path d="M12.4115 27.0381L17.4768 30.9848L11.5928 33.8257L12.4115 27.0381Z" fill="#E27625"/><path d="M27.5893 27.0376L28.391 33.8258L22.5234 30.9847L27.5893 27.0376Z" fill="#E27625"/><path d="M22.6523 30.6128L28.6066 33.4959L23.0679 36.1282L23.1255 34.3884L22.6523 30.6128Z" fill="#D5BFB2"/><path d="M17.3458 30.6143L16.8913 34.3601L16.9286 36.1263L11.377 33.4961L17.3458 30.6143Z" fill="#D5BFB2"/><path d="M15.6263 22.1875L17.1822 25.4575L11.8848 23.9057L15.6263 22.1875Z" fill="#233447"/><path d="M24.3739 22.1875L28.133 23.9053L22.8184 25.4567L24.3739 22.1875Z" fill="#233447"/><path d="M12.8169 27.0049L11.9606 34.0423L7.37109 27.1587L12.8169 27.0049Z" fill="#CC6228"/><path d="M27.1836 27.0049L32.6296 27.1587L28.0228 34.0425L27.1836 27.0049Z" fill="#CC6228"/><path d="M31.5799 20.0605L27.6165 24.0998L24.5608 22.7034L23.0978 25.779L22.1387 20.4901L31.5799 20.0605Z" fill="#CC6228"/><path d="M8.41797 20.0605L17.8608 20.4902L16.9017 25.779L15.4384 22.7038L12.3988 24.0999L8.41797 20.0605Z" fill="#CC6228"/><path d="M8.15039 19.2314L12.6345 23.7816L12.7899 28.2736L8.15039 19.2314Z" fill="#E27525"/><path d="M31.8538 19.2236L27.2061 28.2819L27.381 23.7819L31.8538 19.2236Z" fill="#E27525"/><path d="M17.6412 19.5088L17.8217 20.6447L18.2676 23.4745L17.9809 32.166L16.6254 25.1841L16.625 25.1119L17.6412 19.5088Z" fill="#E27525"/><path d="M22.3562 19.4932L23.3751 25.1119L23.3747 25.1841L22.0158 32.1835L21.962 30.4328L21.75 23.4231L22.3562 19.4932Z" fill="#E27525"/><path d="M27.7797 23.6011L27.628 27.5039L22.8977 31.1894L21.9414 30.5138L23.0133 24.9926L27.7797 23.6011Z" fill="#F5841F"/><path d="M12.2373 23.6011L16.9873 24.9926L18.0591 30.5137L17.1029 31.1893L12.3723 27.5035L12.2373 23.6011Z" fill="#F5841F"/><path d="M10.4717 32.6338L16.5236 35.5013L16.4979 34.2768L17.0043 33.8323H22.994L23.5187 34.2753L23.48 35.4989L29.4935 32.641L26.5673 35.0591L23.0289 37.4894H16.9558L13.4197 35.0492L10.4717 32.6338Z" fill="#C0AC9D"/><path d="M22.2191 30.231L23.0748 30.8354L23.5763 34.8361L22.8506 34.2234H17.1513L16.4395 34.8485L16.9244 30.8357L17.7804 30.231H22.2191Z" fill="#161616"/><path d="M37.9395 0.351562L39.9998 6.53242L38.7131 12.7819L39.6293 13.4887L38.3895 14.4346L39.3213 15.1542L38.0875 16.2779L38.8449 16.8264L36.8347 19.1742L28.5894 16.7735L28.5179 16.7352L22.5762 11.723L37.9395 0.351562Z" fill="#763E1A"/><path d="M2.06031 0.351562L17.4237 11.723L11.4819 16.7352L11.4105 16.7735L3.16512 19.1742L1.15488 16.8264L1.91176 16.2783L0.678517 15.1542L1.60852 14.4354L0.350209 13.4868L1.30098 12.7795L0 6.53265L2.06031 0.351562Z" fill="#763E1A"/><path d="M28.1861 16.2485L36.9226 18.7921L39.7609 27.5398L32.2728 27.5398L27.1133 27.6049L30.8655 20.2912L28.1861 16.2485Z" fill="#F5841F"/><path d="M11.8139 16.2485L9.13399 20.2912L12.8867 27.6049L7.72971 27.5398H0.254883L3.07728 18.7922L11.8139 16.2485Z" fill="#F5841F"/><path d="M25.5283 5.17383L23.0847 11.7736L22.5661 20.6894L22.3677 23.4839L22.352 30.6225H17.6471L17.6318 23.4973L17.4327 20.6869L16.9139 11.7736L14.4707 5.17383H25.5283Z" fill="#F5841F"/></svg>
+                                                <span class="flex-1 ml-3 whitespace-nowrap">About Event</span>
+                                                <span class="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">Popular</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#track1" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                                                <svg aria-hidden="true" class="h-5" viewBox="0 0 292 292" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M145.7 291.66C226.146 291.66 291.36 226.446 291.36 146C291.36 65.5541 226.146 0.339844 145.7 0.339844C65.2542 0.339844 0.0400391 65.5541 0.0400391 146C0.0400391 226.446 65.2542 291.66 145.7 291.66Z" fill="#3259A5"/><path d="M195.94 155.5C191.49 179.08 170.8 196.91 145.93 196.91C117.81 196.91 95.0204 174.12 95.0204 146C95.0204 117.88 117.81 95.0897 145.93 95.0897C170.8 95.0897 191.49 112.93 195.94 136.5H247.31C242.52 84.7197 198.96 44.1797 145.93 44.1797C89.6904 44.1797 44.1104 89.7697 44.1104 146C44.1104 202.24 89.7004 247.82 145.93 247.82C198.96 247.82 242.52 207.28 247.31 155.5H195.94Z" fill="white"/></svg>
+                                                <span class="flex-1 ml-3 whitespace-nowrap">Tracks</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#speaker1" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                                                <svg aria-hidden="true" svg class="h-5"viewBox="0 0 75.591 75.591" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" gradientTransform="matrix(0 -54.944 -54.944 0 23.62 79.474)" gradientUnits="userSpaceOnUse" x2="1"><stop offset="0" stop-color="#ff1b2d"/><stop offset=".3" stop-color="#ff1b2d"/><stop offset=".614" stop-color="#ff1b2d"/><stop offset="1" stop-color="#a70014"/></linearGradient><linearGradient id="b" gradientTransform="matrix(0 -48.595 -48.595 0 37.854 76.235)" gradientUnits="userSpaceOnUse" x2="1"><stop offset="0" stop-color="#9c0000"/><stop offset=".7" stop-color="#ff4b4b"/><stop offset="1" stop-color="#ff4b4b"/></linearGradient><g transform="matrix(1.3333 0 0 -1.3333 0 107.2)"><path d="m28.346 80.398c-15.655 0-28.346-12.691-28.346-28.346 0-15.202 11.968-27.609 26.996-28.313.44848-.02115.89766-.03314 1.3504-.03314 7.2574 0 13.876 2.7289 18.891 7.2137-3.3227-2.2036-7.2074-3.4715-11.359-3.4715-6.7504 0-12.796 3.3488-16.862 8.6297-3.1344 3.6999-5.1645 9.1691-5.3028 15.307v1.3349c.13821 6.1377 2.1683 11.608 5.302 15.307 4.0666 5.2809 10.112 8.6297 16.862 8.6297 4.1526 0 8.038-1.2679 11.361-3.4729-4.9904 4.4643-11.569 7.1876-18.786 7.2144-.03596 0-.07122.0014-.10718.0014z" fill="url(#a)"/><path d="m19.016 68.025c2.6013 3.0709 5.9607 4.9227 9.631 4.9227 8.2524 0 14.941-9.356 14.941-20.897s-6.6891-20.897-14.941-20.897c-3.6703 0-7.0297 1.851-9.6303 4.922 4.0659-5.2809 10.111-8.6297 16.862-8.6297 4.1519 0 8.0366 1.2679 11.359 3.4715 5.802 5.1906 9.4554 12.735 9.4554 21.133 0 8.397-3.6527 15.941-9.4533 21.131-3.3234 2.205-7.2088 3.4729-11.361 3.4729-6.7504 0-12.796-3.3488-16.862-8.6297" fill="url(#b)"/></g></svg>
+                                                <span class="flex-1 ml-3 whitespace-nowrap">Speakers</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#sponsor11" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                                                <svg aria-hidden="true" class="h-5" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><radialGradient cx="0%" cy="50%" fx="0%" fy="50%" r="100%" id="radialGradient-1"><stop stop-color="#5D9DF6" offset="0%"></stop><stop stop-color="#006FFF" offset="100%"></stop></radialGradient></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="logo"><rect id="base" fill="url(#radialGradient-1)" x="0" y="0" width="512" height="512" rx="256"></rect><path d="M169.209772,184.531136 C217.142772,137.600733 294.857519,137.600733 342.790517,184.531136 L348.559331,190.179285 C350.955981,192.525805 350.955981,196.330266 348.559331,198.676787 L328.82537,217.99798 C327.627045,219.171241 325.684176,219.171241 324.485851,217.99798 L316.547278,210.225455 C283.10802,177.485633 228.89227,177.485633 195.453011,210.225455 L186.951456,218.549188 C185.75313,219.722448 183.810261,219.722448 182.611937,218.549188 L162.877976,199.227995 C160.481326,196.881474 160.481326,193.077013 162.877976,190.730493 L169.209772,184.531136 Z M383.602212,224.489406 L401.165475,241.685365 C403.562113,244.031874 403.562127,247.836312 401.165506,250.182837 L321.971538,327.721548 C319.574905,330.068086 315.689168,330.068112 313.292501,327.721609 C313.292491,327.721599 313.29248,327.721588 313.29247,327.721578 L257.08541,272.690097 C256.486248,272.103467 255.514813,272.103467 254.915651,272.690097 C254.915647,272.690101 254.915644,272.690105 254.91564,272.690108 L198.709777,327.721548 C196.313151,330.068092 192.427413,330.068131 190.030739,327.721634 C190.030725,327.72162 190.03071,327.721606 190.030695,327.721591 L110.834524,250.181849 C108.437875,247.835329 108.437875,244.030868 110.834524,241.684348 L128.397819,224.488418 C130.794468,222.141898 134.680206,222.141898 137.076856,224.488418 L193.284734,279.520668 C193.883897,280.107298 194.85533,280.107298 195.454493,279.520668 C195.454502,279.520659 195.45451,279.520651 195.454519,279.520644 L251.65958,224.488418 C254.056175,222.141844 257.941913,222.141756 260.338618,224.488222 C260.338651,224.488255 260.338684,224.488288 260.338717,224.488321 L316.546521,279.520644 C317.145683,280.107273 318.117118,280.107273 318.71628,279.520644 L374.923175,224.489406 C377.319825,222.142885 381.205562,222.142885 383.602212,224.489406 Z" id="WalletConnect" fill="#FFFFFF" fill-rule="nonzero"></path></g></g></svg>
+                                                <span class="flex-1 ml-3 whitespace-nowrap">Sponsors</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#faq1" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                                                <svg aria-hidden="true" class="h-4" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M72.0998 0.600098H48.3998H24.5998H0.799805V24.4001V48.2001V49.7001V71.8001V71.9001V95.5001H24.5998V72.0001V71.9001V49.8001V48.3001V24.5001H48.3998H72.1998H95.9998V0.700104H72.0998V0.600098Z" fill="#617BFF"/><path d="M48.5 71.8002H72.1V95.6002H73C79.1 95.6002 84.9 93.2002 89.2 88.9002C93.5 84.6002 95.9 78.8002 95.9 72.7002V48.2002H48.5V71.8002Z" fill="#617BFF"/></svg>
+                                                <span class="flex-1 ml-3 whitespace-nowrap">FAQ</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                          <a href="#contact1" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                                              <svg aria-hidden="true" class="h-4" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M72.0998 0.600098H48.3998H24.5998H0.799805V24.4001V48.2001V49.7001V71.8001V71.9001V95.5001H24.5998V72.0001V71.9001V49.8001V48.3001V24.5001H48.3998H72.1998H95.9998V0.700104H72.0998V0.600098Z" fill="#617BFF"/><path d="M48.5 71.8002H72.1V95.6002H73C79.1 95.6002 84.9 93.2002 89.2 88.9002C93.5 84.6002 95.9 78.8002 95.9 72.7002V48.2002H48.5V71.8002Z" fill="#617BFF"/></svg>
+                                              <span class="flex-1 ml-3 whitespace-nowrap">Contact Us</span>
+                                          </a>
+                                      </li>
+                                    </ul>
+                                    <div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <aside
+                id="sideMenu"
+                class="bg-background top-0 right-0 h-screen w-screen md:hidden transform fixed overflow-auto ease-in-out transition-all duration-300 z-40 translate-x-full"
+              >
+                <div class="text-right pr-4 pt-8 pb-2 text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-10 w-10 text-white inline-block"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-center text-4xl pb-12">Menu</h2>
+                <ul
+                  class="grid items-center gap-4 text-2xl font-medium text-center px-8"
+                >
+                  <li class="">
+                    <div
+                      class="text-white transition hover:text-white/75 cursor-pointer"
+                    >
+                      Home
+                    </div>
+                  </li>
+                  <li class="">
+                    <div
+                      class="text-white transition hover:text-white/75 cursor-pointer"
+                    >
+                      About Us
+                    </div>
+                  </li>
+                  <li class="">
+                    <div
+                      class="text-white transition hover:text-white/75 cursor-pointer"
+                    >
+                      Tracks
+                    </div>
+                  </li>
+                  <li class="">
+                    <div
+                      class="text-white transition hover:text-white/75 cursor-pointer"
+                    >
+                      Prizes
+                    </div>
+                  </li>
+                  <li class="hidden">
+                    <div
+                      class="text-white transition hover:text-white/75 cursor-pointer"
+                    >
+                      Judges
+                    </div>
+                  </li>
+                  <li class="hidden">
+                    <div
+                      class="text-white transition hover:text-white/75 cursor-pointer"
+                    >
+                      Speakers
+                    </div>
+                  </li>
+                  <li class="">
+                    <div
+                      class="text-white transition hover:text-white/75 cursor-pointer"
+                    >
+                      Sponsors
+                    </div>
+                  </li>
+                  <li class="hidden">
+                    <div
+                      class="text-white transition hover:text-white/75 cursor-pointer"
+                    >
+                      Our Team
+                    </div>
+                  </li>
+                  <li class="">
+                    <div
+                      class="text-black transition hover:text-black/75 cursor-pointer"
+                    >
+                      FAQs
+                    </div>
+                  </li>
+                </ul>
+              </aside>
+            </header>
+            <div
+              class="max-w-screen-xl px-5 py-4 mx-auto lg:items-center lg:flex"
+            >
+            <!-- <div class="max-w-screen-xl center hidden lg:mt-0 lg:col-span-1 lg:flex">
+              <img src="Datalize Logo.png" alt="logo">
+            </div> -->
+            <div class="max-w-8xl mx-auto text-center">
+                <!-- <h1
+                  class="text-6xl lg:text-9xl font-extrabold tracking-wider font-heading py-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-500 to-purple-600"
+                >
+                  DATALIZE
+                </h1> -->
+                <img src="ff.png" alt="logo">
+                <!-- <p
+                  class="max-w-xl mx-auto mt-4 mt-4sm:leading-relaxed text-2xl sm:text-3xl"
+                >
+                  <b>"Analyze , Socialize , Specialize"</b>
+                </p> -->
+                <p
+                  class="text-white max-w-xl mx-auto mt-0 sm:leading-relaxed text-lg sm:text-xl"
+                >
+                📅 December 27, 2022<br>Click on below link 🔗 to register.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 mt-14">
+                  <div id="adi1" class="block w-full cursor-pointer mx-2 px-12 py-3 text-sm font-medium text-black border border-black rounded sm:w-auto bg-white focus:outline-none focus:ring"><a href="https://linktr.ee/datalize">REGISTER HERE!</a></div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div id="sponsor-gold">
+              <h2 class="text-3xl px-4 py-2 text-center font-medium py-9">
+                <b class="text-white px-4 py-2 text-6xl text-center font-bold py-12">Upskill Partner</b>
+                
+                <div
+                  class="flex flex-wrap gap-8 justify-center items-center"
+                >
+                  <div
+                    class="flex-item-center-1 sm:flex-item-center-3 px-8 sm:px-0"
+                  >
+                    <div class="p-1">
+                      <a
+                        class="block p-6 bg-background sm:p-8 rounded-xl"
+                        href="#"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <div class="">
+                          <img
+                            src="MyCaptain_logo.png"
+                            alt="Mycaptain"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </h2>
+            </div>
+          </section>
+          <section id="aboutUs" class="text-white bg-background">
+            <div
+              class="max-w-screen-xl px-4 py-2 mx-auto lg:items-center lg:flex">
+              <div class="max-w-8xl mx-auto text-center">
+                <h2 id="about1" class="text-white px-2 py-2 text-6xl text-center font-bold py-12">About Event</h2>
+                <p class="text-gray-400 text-xl py-14 text-center font-medium">
+                  DATALIZE is a captivating single day event organized by Data Science Club, VIT Bhopal , for students across any domain irrespective of their branch, will be a great opportunity for students to learn about data science and to connect with experts in the field. The seminars and hands-on workshops will provide valuable knowledge and experience, and the quiz and prize at the end will add an element of competition and motivation for the attendees.  Participants will not be charged for this training. All participants will be provided with digital certificates approved from the Data Science club. 
+                </p>
+              </div>
+            </div>
+          </section>
+          <section id="tracks" class="text-white bg-background py-10">
+            <div
+              class="max-w-screen-xl px-4 py-2 mx-auto lg:items-center lg:flex"
+            >
+              <div class="max-w-8xl mx-auto text-center">
+                <h2 id="track1" class="text-white px-2 py-2 text-6xl text-center font-bold py-12">Event Schedule</h2>
+                <div class="flex flex-wrap gap-8 justify-center">
+                  <!-- <div
+                    class="p-1 shadow-xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-2xl w-full"
+                  >
+                    <a class="block p-6 bg-background sm:p-8 rounded-xl">
+                      <div class="p-6">
+                        <h5 class="text-3xl font-bold text-white text-center">
+                          Web 3
+                        </h5>
+                        <p
+                          class="mt-4 text-base text-gray-400 text-center whitespace-pre-wrap"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Autem corrupti nisi dolore veniam assumenda amet
+                          aspernatur natus possimus obcaecati mollitia.
+                        </p>
+
+                      </div>
+                    </a>
+                  </div> -->
+                  
+                  <!-- <div class="p-1 shadow-xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-2xl w-full"><a class="block p-6 bg-background sm:p-8 rounded-xl"><div class="p-6">
+                    <h5 class="text-3xl font-bold text-white text-center">Web 3</h5>
+                    <p class="mt-4 text-base text-gray-400 text-center whitespace-pre-wrap">The Web3 track offers an idea for a new iteration of the World Wide Web-based on blockchain technology. This iteration relies on such concepts as decentralization and token-based economics.</p></div></a></div> -->
+
+
+                  <div class="max-w-7xl mx-auto">
+                    <div class="relative group">
+                      <div class="absolute -inset-2 bg-gradient-to-r from-pink-600 via-red-600 to-yellow-600 rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-300"></div>
+                      <div class="relative px-10 py-16 bg-black ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
+                       
+
+                        <div class="space-y-2">
+                          <h5 class="mt-2 text-4xl font-bold text-white text-center">Data Science Talk</h5>
+                          <p class="mt-4 text-base text-gray-400 text-center whitespace-pre-wrap">
+                            We feel immense pleasure to put Archit Jain in the picture as a very special guest for the Opening Ceremony of “Datalize”. He’s a Senior Software Engineer at Xoriant. Here in, you all may look forward to some amazing one-on-one conversation on Data Science and later on followed by a 15 minute offline quiz. This will be happening in Hybrid mode (both online and offline) from 10:30am to 1:10 pm on 27th December,2022. 
+                          </p>                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="max-w-7xl mx-auto">
+                    <div class="relative group">
+                      <div class="absolute -inset-2 bg-gradient-to-r from-pink-600 via-red-600 to-yellow-600 rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-300"></div>
+                      <div class="relative px-10 py-16 bg-black ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
+                       
+
+                        <div class="space-y-2">
+                          <h5 class="mt-2 text-4xl font-bold text-white text-center">Hands-on workshop on IoT Data Analysis</h5>
+                          <p class="mt-4 text-base text-gray-400 text-center whitespace-pre-wrap">
+                            An event to upskill your knowledge both literally and practically. We are having Mr. Azad Sheikh as the speaker for the event. He’s a Delivery Leader-Building Systems, Products and CoE Teams. He’ll be taking Hands-on workshop on IoT Data Analysis. Datalize will be happening in Hybrid mode (both online and offline) from 02:30am to 4:30 pm on 27th December,2022.
+                          </p>                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--<div class="max-w-7xl mx-auto">
+                    <div class="relative group">
+                      <div class="absolute -inset-2 bg-gradient-to-r from-pink-600 via-red-600 to-yellow-600 rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-300"></div>
+                      <div class="relative px-10 py-16 bg-black ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
+                       
+
+                        <div class="space-y-2">
+                          <h5 class="mt-2 text-4xl font-bold text-white text-center">Game Development</h5>
+                          <p class="mt-4 text-base text-gray-400 text-center whitespace-pre-wrap">The Game Development track unfurls the art of creating games and describes the design, development, and releasing the game. It involves concept generation, design, build, test, and release.
+
+                          </p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>-->
+                  <!--<div class="max-w-7xl mx-auto">
+                    <div class="relative group">
+                      <div class="absolute -inset-2 bg-gradient-to-r from-pink-600 via-red-600 to-yellow-600 rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-300"></div>
+                      <div class="relative px-10 py-16 bg-black ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
+                       
+
+                        <div class="space-y-2">
+                          <h5 class="mt-2 text-4xl font-bold text-white text-center">AR/VR</h5>
+                          <p class="mt-4 text-base text-gray-400 text-center whitespace-pre-wrap">The AR/VR tracks focuses on the rapidly evolving technologies of Augmented, Virtual and Mixed Reality. It isn't just about technology. It's also about design, creation, and problem solving.</p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>-->
+                  <!--<div class="max-w-7xl mx-auto">
+                    <div class="relative group">
+                      <div class="absolute -inset-2 bg-gradient-to-r from-pink-600 via-red-600 to-yellow-600 rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-300"></div>
+                      <div class="relative px-10 py-16 bg-black ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
+                       
+
+                        <div class="space-y-2">
+                          <h5 class="mt-2 text-4xl font-bold text-white text-center">Open Innovation</h5>
+                          <p class="mt-4 text-base text-gray-400 text-center whitespace-pre-wrap">The Open Innovation Track unlocks a mindset contrary to the secrecy and silo mentality of the traditional community. The key to sustainable open innovation is integrating consumers’ ideas into the process of building solutions such as Clean Energy Efficiency, Repurposing waste, etc.</p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>-->
+
+                  <!-- <div
+                    class="p-1 shadow-xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-2xl w-full"
+                  >
+                    <a class="block p-6 bg-background sm:p-8 rounded-xl">
+                      <div class="p-6">
+                        <h5 class="text-3xl font-bold text-white text-center">
+                          Web 2
+                        </h5>
+                        <p
+                          class="mt-4 text-base text-gray-400 text-center whitespace-pre-wrap"
+                        >
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Eligendi distinctio commodi est animi a
+                          reiciendis, quo nam possimus mollitia voluptatum!
+                        </p>
+                      </div>
+                    </a>
+                  </div> -->
+                  <!-- <div
+                    class="p-1 shadow-xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-2xl w-full"
+                  >
+                    <a class="block p-6 bg-background sm:p-8 rounded-xl">
+                      <div class="p-6">
+                        <h5 class="text-3xl font-bold text-white text-center">
+                          Machine Learning
+                        </h5>
+                        <p
+                          class="mt-4 text-base text-gray-400 text-center whitespace-pre-wrap"
+                        >
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Libero asperiores inventore facere cum labore
+                          nisi praesentium dolorum, maiores, at amet explicabo,
+                          non voluptate in repudiandae perferendis distinctio
+                          veritatis qui! Nemo.
+                        </p>
+                      </div>
+                    </a>
+                  </div> -->
+                  <!-- <div
+                    class="p-1 shadow-xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-2xl w-full"
+                  >
+                    <a class="block p-6 bg-background sm:p-8 rounded-xl">
+                      <div class="p-6">
+                        <h5 class="text-3xl font-bold text-white text-center">
+                          Game Development
+                        </h5>
+                        <p
+                          class="mt-4 text-base text-gray-400 text-center whitespace-pre-wrap"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Mollitia ipsa eligendi repellendus veritatis
+                          voluptatum non voluptate animi possimus doloremque
+                          perferendis!
+                        </p>
+                      </div>
+                    </a>
+                  </div> -->
+
+                  <!-- <div class="p-1 shadow-xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-2xl w-full"><a class="block p-6 bg-background sm:p-8 rounded-xl"><div class="p-6"><h5 class="text-3xl font-bold text-white text-center">Web 2</h5><p class="mt-4 text-base text-gray-400 text-center whitespace-pre-wrap">The Web Development track revolves around building and Rendering Web pages, including HTML, CSS, SVG, device APIs, and other technologies for Web Applications. It opens up the endless possibilities of interconnected tools to create the most efficient and accessible platform for deploying sustainable solutions.</p></div></a></div> -->
+
+
+
+
+
+                  <!-- <div
+                    class="p-1 shadow-xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-2xl w-full"
+                  >
+                    <a class="block p-6 bg-background sm:p-8 rounded-xl">
+                      <div class="p-6">
+                        <h5 class="text-3xl font-bold text-white text-center">
+                          AR/VR
+                        </h5>
+                        <p
+                          class="mt-4 text-base text-gray-400 text-center whitespace-pre-wrap"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Magnam cupiditate maxime architecto excepturi
+                          hic, eveniet incidunt vero consequatur voluptatem
+                          saepe?
+                        </p>
+                      </div>
+                    </a>
+                  </div> -->
+                  <!-- <div
+                    class="p-1 shadow-xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-2xl w-full"
+                  >
+                    <a class="block p-6 bg-background sm:p-8 rounded-xl">
+                      <div class="p-6">
+                        <h5 class="text-3xl font-bold text-white text-center">
+                          Open Innovation
+                        </h5>
+                        <p
+                          class="mt-4 text-base text-gray-400 text-center whitespace-pre-wrap"
+                        >
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Dignissimos nemo rem sapiente nesciunt,
+                          blanditiis mollitia dolore molestiae repellat id
+                          reprehenderit.
+                        </p>
+                      </div>
+                    </a>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="prizes" class="text-white bg-background py-10">
+            <div
+              class="max-w-screen-xl px-4 py-2 mx-auto lg:items-center lg:flex"
+            >
+              <div class="max-w-8xl mx-auto text-center">
+                <h2 class="text-white text-6xl text-center font-bold py-12">🎁 Prizes</h2>
+                <p class="text-gray-400 text-xl">
+                  <b class="text-gray-400 text-xl">There will be a Data Science Quiz after Data Science Talk in auditorium,VIT Bhopal...Winner of the quiz will get exciting prizes!</b>
+                  <!-- <img class="center" src="hoodie.png" alt="prize"> -->
+                  <div
+                  class="flex flex-wrap gap-8 justify-center items-center"
+                >
+                  <div
+                    class="flex-item-center-1 sm:flex-item-center-3 px-8 sm:px-0"
+                  >
+                    <div class="p-1">
+                      <a
+                        class="block p-6 bg-background sm:p-8 rounded-xl"
+                        href="#"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <div class="">
+                          <img
+                            src="hoodie.png"
+                            alt="hoodie"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                </p>
+              </div>
+            </div>
+          </section  >
+          <section id="sponsors" class="text-white bg-background py-10">
+            <div
+              class="max-w-screen-xl px-4 py-2 mx-auto lg:items-center lg:flex"
+            >
+              <div class="max-w-8xl mx-auto text-center">
+                <h1 id="speaker1" class="text-white text-6xl text-center font-bold py-12">Speakers</h1>
+                <img src="speakersfff.png" alt="speaker">
+                <div>
+                  <!-- <div id="sponsor-platinum">
+                    <h2 class="text-white text-3xl text-center font-medium py-8">
+                      <b class="text-white">Mr. Archit Jain</b>
+                      
+                      <div
+                        class="flex flex-wrap gap-8 justify-center items-center"
+                      >
+                        <div class="flex-item-center-1 sm:flex-item-center-2">
+                          <div class="p-1">
+                            <a
+                              class="block p-6 bg-background sm:p-8 rounded-xl"
+                              href="#"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <div class="">
+                                <img
+                                  src="Archit Jain_prev_ui.png"
+                                  alt="nothing"
+                                  height="400px"
+                                  width="400px"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div class="text-white">
+                      Senior Software Engineer at @Xoriant<br><br><br><br>
+                    </h2>
+                  </div>
+                  <div id="sponsor-platinum">
+                    <h2 class="text-white text-3xl text-center font-medium py-8">
+                      <b class="text-white">Mr. Azad Sheikh</b>
+                      
+                      <div
+                        class="flex flex-wrap gap-8 justify-center items-center"
+                      >
+                        <div class="flex-item-center-1 sm:flex-item-center-2">
+                          <div class="p-1">
+                            <a
+                              class="block p-6 bg-background sm:p-8 rounded-xl"
+                              href="#"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <div class="">
+                                <img
+                                  src="Azad_Sheikh-removebg-preview.png"
+                                  alt="nothing"
+                                  height="350px"
+                                  width="350px"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      Delivery Leader - Building Systems, Products and CoE Teams.
+                    </h2>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </section>
+                    
+          <section id="sponsors" class="text-white bg-background py-10">
+            <div
+              class="max-w-screen-xl px-4 py-2 mx-auto lg:items-center lg:flex"
+            >
+              <div class="max-w-8xl mx-auto text-center">
+                <h2 id="sponsor11" class="text-white text-6xl text-center font-bold py-12">Sponsors</h2>
+                <div>
+                  <!--<div id="sponsor-gold">
+                    <h2 class="text-3xl text-center font-medium py-8">
+                      <b>Up skill Partner</b>
+                      
+                       <div
+                        class="flex flex-wrap gap-8 justify-center items-center"
+                      >
+                        <div
+                          class="flex-item-center-1 sm:flex-item-center-3 px-8 sm:px-0"
+                        >
+                          <div class="p-1">
+                            <a
+                              class="block p-6 bg-background sm:p-8 rounded-xl"
+                              href="#"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <div class="">
+                                <img
+                                  src="MyCaptain_logo.png"
+                                  alt="Mycaptain"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </h2>
+                  </div>-->
+                  <div id="sponsor-platinum">
+                    <h2 class="text-3xl text-center font-medium py-8">
+                      .
+                      
+                      <div
+                        class="flex flex-wrap gap-8 justify-center items-center"
+                      >
+                        <div class="flex-item-center-1 sm:flex-item-center-2">
+                          <div class="p-1">
+                            <a
+                              class="block p-6 bg-background sm:p-8 rounded-xl"
+                              href="#"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <div class="">
+                                <img
+                                  src="codingblocks.png"
+                                  alt="nothing"
+                                  height="550px"
+                                  width="550px"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="flex-item-center-1 sm:flex-item-center-2">
+                          <div class="p-1">
+                            <a
+                              class="block p-6 bg-background sm:p-8 rounded-xl"
+                              href="https://polygon.technology/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <div class="">
+                                <img
+                                  src="jetbrains_logo.png"
+                                  alt="Polygon"
+                                  height="550px"
+                                  width="550px"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </h2>
+                  </div>
+                  <div id="sponsor-gold">
+                    <h2 class="text-3xl text-center font-medium py-12">
+                      <b>Up skill Partner</b>
+                      
+                       <div
+                        class="flex flex-wrap gap-8 justify-center items-center"
+                      >
+                        <div
+                          class="flex-item-center-1 sm:flex-item-center-3 px-8 sm:px-0"
+                        >
+                          <div class="p-1">
+                            <a
+                              class="block p-6 bg-background sm:p-8 rounded-xl"
+                              href="#"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <div class="">
+                                <img
+                                  src="MyCaptain_logo.png"
+                                  alt="Mycaptain"
+                                />
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="faq" class="center text-white bg-background py-10">
+            <!-- <img src="line-removebg-preview.png" alt="line"> -->
+            <div
+              class="max-w-screen-xl px-4 py-2 mx-auto lg:items-center lg:flex"
+            >
+              <div class="max-w-8xl mx-auto text-center">
+                <h2 id="faq1" class="text-white text-6xl text-center font-bold py-12">FAQs</h2>
+                <div class="space-y-4 flex flex-wrap">
+                  <details
+                    class="group bg-gray-50 bg-opacity-95 rounded-lg cursor-pointer py-6 px-8 w-full"
+                  >
+                    <summary class="flex items-center justify-between">
+                      <h5 class="text-xl font-medium text-gray-900 text-left">
+                        Is there a fee to participate in the event?
+                      </h5>
+                      <svg
+                        class="flex-shrink-0 ml-1.5 w-5 h-5 transition duration-300 group-open:-rotate-180 text-gray-900"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        ></path>
+                      </svg>
+                    </summary>
+                    <p
+                      class="mt-4 pr-4 leading-relaxed text-gray-700 text-left text-lg"
+                    >
+                      Participation in the event is free!
+                    </p>
+                  </details>
+                  <details
+                    class="group bg-gray-50 bg-opacity-95 rounded-lg cursor-pointer py-6 px-8 w-full"
+                  >
+                    <summary class="flex items-center justify-between">
+                      <h5 class="text-xl font-medium text-gray-900 text-left">
+                        What else will be there for participants?
+                      </h5>
+                      <svg
+                        class="flex-shrink-0 ml-1.5 w-5 h-5 transition duration-300 group-open:-rotate-180 text-gray-900"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        ></path>
+                      </svg>
+                    </summary>
+                    <p
+                      class="mt-4 pr-4 leading-relaxed text-gray-700 text-left text-lg"
+                    >
+                      Participation certifications will be provied to all participants.
+                    </p>
+                  </details>
+                  <details
+                  class="group bg-gray-50 bg-opacity-95 rounded-lg cursor-pointer py-6 px-8 w-full"
+                >
+                  <summary class="flex items-center justify-between">
+                    <h5 class="text-xl font-medium text-gray-900 text-left">
+                      Can a Fresher participate in this event?
+                    </h5>
+                    <svg
+                      class="flex-shrink-0 ml-1.5 w-5 h-5 transition duration-300 group-open:-rotate-180 text-gray-900"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </summary>
+                  <p
+                    class="mt-4 pr-4 leading-relaxed text-gray-700 text-left text-lg"
+                  >
+                    Yes , the event is absolutely beginner friendly. All the freshers must attend this session to get the kick start in their Data Science journey.     
+                  </p>
+                </details>
+                  <details
+                    class="group bg-gray-50 bg-opacity-95 rounded-lg cursor-pointer py-6 px-8 w-full"
+                  >
+                    <summary class="flex items-center justify-between">
+                      <h5 class="text-xl font-medium text-gray-900 text-left">
+                        Is the event online or offline?
+                      </h5>
+                      <svg
+                        class="flex-shrink-0 ml-1.5 w-5 h-5 transition duration-300 group-open:-rotate-180 text-gray-900"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        ></path>
+                      </svg>
+                    </summary>
+                    <p
+                      class="mt-4 pr-4 leading-relaxed text-gray-700 text-left text-lg"
+                    >
+                      This is a Hybrid event , participants can attend online as well as offline.
+                    </p>
+                  </details>
+                  <details
+                    class="group bg-gray-50 bg-opacity-95 rounded-lg cursor-pointer py-6 px-8 w-full"
+                  >
+                    <summary class="flex items-center justify-between">
+                      <h5 class="text-xl font-medium text-gray-900 text-left">
+                        Where does this event takes place?
+                      </h5>
+                      <svg
+                        class="flex-shrink-0 ml-1.5 w-5 h-5 transition duration-300 group-open:-rotate-180 text-gray-900"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        ></path>
+                      </svg>
+                    </summary>
+                    <p
+                      class="mt-4 pr-4 leading-relaxed text-gray-700 text-left text-lg"
+                    >
+                      Event will solely take place at AUDITORIUM, VIT Bhopal university.
+                    </p>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="text-background bg-footer" id="footer" style="color: black; background: color #00010f;">
+          <div class="max-w-screen-xl px-4 py-2 lg:items-center lg:flex">
+            <div class="max-w-8xl mx-auto">
+              <h2 id="contact1" class="text-white text-4xl font-bold pt-12 mb-6" >Contact Us</h2>
+              <p class="text-white">
+                In case of any help feel free to contact us<br>
+                Charchit Jain - 79821 37982<br>
+                Chetan Saini - 6396 244 151
+                <!-- -->
+                <br />
+                <br />
+                Connect with us on
+                <!-- -->
+                <!-- -->
+                <a 
+                  href="https://www.linkedin.com/in/data-science-club-vit-bhopal-5b9b02232"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="font-bold text-white"
+                >
+                  Linkedin
+                  <!-- -->
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 48 48"
+                  class="h-7 w-7 inline-block"
+                >
+                  <path
+                    d="M 11.5 6 C 8.4802259 6 6 8.4802259 6 11.5 L 6 36.5 C 6 39.519774 8.4802259 42 11.5 42 L 36.5 42 C 39.519774 42 42 39.519774 42 36.5 L 42 11.5 C 42 8.4802259 39.519774 6 36.5 6 L 11.5 6 z M 11.5 9 L 36.5 9 C 37.898226 9 39 10.101774 39 11.5 L 39 36.5 C 39 37.898226 37.898226 39 36.5 39 L 11.5 39 C 10.101774 39 9 37.898226 9 36.5 L 9 11.5 C 9 10.101774 10.101774 9 11.5 9 z M 15.5 13 A 2.5 2.5 0 0 0 15.5 18 A 2.5 2.5 0 0 0 15.5 13 z M 14 20 C 13.447 20 13 20.447 13 21 L 13 34 C 13 34.553 13.447 35 14 35 L 17 35 C 17.553 35 18 34.553 18 34 L 18 21 C 18 20.447 17.553 20 17 20 L 14 20 z M 21 20 C 20.447 20 20 20.447 20 21 L 20 34 C 20 34.553 20.447 35 21 35 L 24 35 C 24.553 35 25 34.553 25 34 L 25 26.5 C 25 25.121 26.121 24 27.5 24 C 28.879 24 30 25.121 30 26.5 L 30 34 C 30 34.553 30.447 35 31 35 L 34 35 C 34.553 35 35 34.553 35 34 L 35 26 C 35 22.691 32.309 20 29 20 C 27.462 20 26.063 20.586016 25 21.541016 L 25 21 C 25 20.447 24.553 20 24 20 L 21 20 z"
+                  ></path>
+                </svg>
+                </a>
+                <br />
+                For latest updates don‘t forget to follow us on
+                <!-- -->
+                <!-- -->
+                <a 
+                  href="https://www.instagram.com/dsc_vitb"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="font-bold text-white"
+                >
+                  Instagram
+                  <!-- -->
+                  <svg
+                    fill="#000000"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="h-5 w-5 inline-block ml-1"
+                  >
+                    <path
+                      d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
+                    ></path>
+                  </svg>
+                </a>
+                <br />
+                <br />
+                Want to sponsor us, mail us at
+                <!-- -->
+                <!-- -->
+                <a
+                  href="mailto: dsc.vitb@vitbhopal.ac.in"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="font-bold text-white"
+                >
+                  dscclubvitbhopal
+                </a>
+                <!-- -->
+              </p>
+              <p class="text-white mt-4 font-semibold" >
+                <a href="#">Code of Conduct</a>
+              </p>
+            </div>
+          </div>
+          <p class="text-white text-sm font-medium pt-12 pb-6 text-center" >
+            Made with ♥️ by DSC Club
+            <!-- -->
+            <!-- -->
+            <a 
+              href="https://www.instagram.com/dsc_vitb/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @dscclubvitbhopal
+            </a>
+          </p>
+        </footer>
+      </div>
+      <script id="__NEXT_DATA__" type="application/json">
+        {
+          "props": { "pageProps": {} },
+          "page": "/",
+          "query": {},
+          "buildId": "HqLMwIpmS_secraRpGcmO",
+          "nextExport": true,
+          "autoExport": true,
+          "isFallback": false,
+          "scriptLoader": []
+        }
+      </script>
+      <script
+        src="https://apply.devfolio.co/v2/sdk.js"
+        async=""
+        defer=""
+      ></script>
+      <next-route-announcer>
+        <p
+          aria-live="assertive"
+          id="__next-route-announcer__"
+          role="alert"
+          style="
+            border: 0px;
+            clip: rect(0px, 0px, 0px, 0px);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0px;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap;
+            overflow-wrap: normal;
+          "
+        ></p>
+      </next-route-announcer>
+      <div
+        id="devfolio-overlay-container"
+        style="
+          position: fixed;
+          left: 0px;
+          top: 0px;
+          display: none;
+          width: 100%;
+          height: 100%;
+          z-index: 2147483647;
+        "
+      >
+        <iframe
+          src="https://apply.devfolio.co/v2/overlay"
+          title="Continue your hackathon application"
+          id="devfolio-overlay-iframe"
+          sandbox="allow-scripts allow-same-origin allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups"
+          style="
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: block;
+            background-color: transparent;
+            padding: 0px;
+            border: 0px;
+            margin: 0px;
+          "
+        ></iframe>
+      </div>
+      <iframe src="about:blank" style="display: none;"></iframe>
+    </body>
+  </body>
+</html>
